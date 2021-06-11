@@ -1,5 +1,25 @@
 # tree-sitter-printf
 
+## Add to Neovim
+
+Add this to your Neovim config.
+
+```lua
+lua << EOF
+if pcall(require, "nvim-treesitter.parsers") then
+  local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
+  parser_config.printf = {
+    install_info = {
+      url = "https://github.com/pstuifzand/tree-sitter-printf",
+      files = { "src/parser.c" },
+    },
+    filetype = "printf",
+  }
+end
+
+EOF
+```
+
 ## Injections
 
 ### `~/.config/nvim/after/queries/go/injections.scm`
