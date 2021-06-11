@@ -1,0 +1,17 @@
+{
+  "name": "tree-sitter-printf",
+  "version": "0.1.0",
+  "description": "Injectable grammar for printf formats",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nan": "^2.14.2"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.19.5"
+  }
+}
